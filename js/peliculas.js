@@ -43,4 +43,17 @@ for (const key in distancia){
     }
 }
 
+nombreplanetas.forEach((value,index,array) => {
+    console.log('planeta', index, value)
+});
 
+nombreplanetas.map((planetas,index) =>{
+    return (
+        console.log('el planeta ${planetas} tiene tamañp de: ${tamaño[index]}')
+        )
+})
+let resuktadiMap = nombreplanetas.map ((planetas,index) => {
+    return ('el planeta ${planetas} tiene tamañp de: ${tamaño[index]}')
+})
+
+console.log(resuktadiMap)
